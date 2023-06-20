@@ -1,38 +1,42 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Front-end Notes",
-  description: "前端笔记文档",
+  title: `Front-end Notes`,
+  description: '前端笔记文档',
   base: '/front-end-notes/',
-  
+
   head: [ // 网站图标
-  ['link', { rel: 'icon', type: 'image/svg+xml', href: 'logo.svg' }],
-  // ['link', { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
-],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'logo.svg' }],
 
-appearance: true, // 默认 true，设为 false 则无法切换dark/light主题，可选 'dark' true false
-markdown: {
-  lineNumbers: false // 是否显示行数，默认false
-},
-
+  ],
+  appearance: true, // 默认 true，设为 false 则无法切换dark/light主题，可选 'dark' true false
+  markdown: {
+    lineNumbers: false // 是否显示行数，默认false
+  },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     editLink: {
       pattern: 'https://github.com/wet631/front-end-notes/tree/master/docs/:path',
       text: 'Suggest changes to this page',
     },
-     // 默认支持icon包括：'discord'|'facebook'|'github'|'instagram'|'linkedin'|'mastodon'|'slack'|'twitter'|'youtube'
+    // 默认支持icon包括：'discord'|'facebook'|'github'|'instagram'|'linkedin'|'mastodon'|'slack'|'twitter'|'youtube'
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/wet631/front-end-notes' },
+      // 自定义icon
+      // {
+      //   icon: {
+      //     svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
+      //   },
+      //   link: 'https://www.npmjs.com/package/front-end-notes'
+      // }
     ],
-    // nav: [
-    //   { text: 'Home', link: '/' },
-    //   { text: 'Examples', link: '/markdown-examples' }
-    // ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present The Muse Catcher',
+    },
+
     nav: [
-      { text: 'Vue2', link: '/vue2/note-1', activeMatch: '/vue2/' },
-      { text: 'Vue3', link: '/vue3/note-1', activeMatch: '/vue3/' },
+      { text: 'Vue3', link: '/Vue3/started', activeMatch: '/Vue3/' },
+      { text: 'Ts', link: '/Ts/started', activeMatch: '/Ts/' },
       {
         text: 'links',
         items: [
@@ -48,18 +52,6 @@ markdown: {
                 link: 'https://cn.vuejs.org/guide/introduction.html',
               },
               {
-                text: 'TypeScript Docs',
-                link: 'https://www.tslang.cn/docs/home.html',
-              },
-              {
-                text: 'MDN Web Docs',
-                link: 'https://developer.mozilla.org/zh-CN/',
-              }
-            ]
-          },
-          {
-            items: [
-              {
                 text: 'npm',
                 link: 'https://www.npmjs.com/',
               },
@@ -67,65 +59,60 @@ markdown: {
                 text: 'vite',
                 link: 'https://cn.vitejs.dev/',
               },
-              {
-                text: 'markdown',
-                link: 'https://markdown.com.cn/',
-              },
-              {
-                text: 'vitepress',
-                link: 'https://vitepress.dev/',
-              }
             ]
-          }
+          },
         ]
       }
     ],
+
     sidebar: {
-      '/vue2/': [
+      '/Vue3/': [
         {
           text: '指引',
           items: [
             {
               text: '开始',
-              link: '/vue2/started'
+              link: '/Vue3/started'
             }
           ]
         },
         {
-          text: 'Vue2',
+          text: 'Vue3 Notes',
           items: [
             {
               text: 'note-1',
-              link: '/vue2/note-1'
+              link: '/Vue3/components/note-1'
             },
             {
               text: 'note-2',
-              link: '/vue2/note-2'
-            }
+              link: '/Vue3/components/note-2'
+            },
+
           ]
         }
       ],
-      '/vue3/': [
+      '/Ts/': [
         {
           text: '指引',
           items: [
             {
               text: '开始',
-              link: '/vue3/started'
+              link: '/Ts/started'
             }
           ]
         },
         {
-          text: 'Vue3',
+          text: 'Ts Notes',
           items: [
             {
               text: 'note-1',
-              link: '/vue3/note-1'
+              link: '/Ts/components/note-1'
             },
             {
               text: 'note-2',
-              link: '/vue3/note-2'
+              link: '/Ts/components/note-2'
             },
+
           ]
         }
       ]

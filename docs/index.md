@@ -17,14 +17,6 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/wet631/front-end-notes.git
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 <script setup lang="ts">
 import { onMounted } from 'vue'
