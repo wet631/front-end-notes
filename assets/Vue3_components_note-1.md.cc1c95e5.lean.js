@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./chunks/framework.cfee53c6.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Vue3/components/note-1.md","filePath":"Vue3/components/note-1.md"}'),n={name:"Vue3/components/note-1.md"};function a(s,c,r,p,m,_){return o(),t("div")}const f=e(n,[["render",a]]);export{i as __pageData,f as default};
