@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/started
+      link: /started
     - theme: alt
       text: View on GitHub
       link: https://github.com/wet631/front-end-notes.git
