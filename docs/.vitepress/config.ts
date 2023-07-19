@@ -39,13 +39,15 @@ export default defineConfig({
       { text: "Vue3", link: "/Vue3/started", activeMatch: "/Vue3/" },
       { text: "Ts", link: "/Ts/started", activeMatch: "/Ts/" },
       { text: "Js", link: "/Js/started", activeMatch: "/Js/" },
-      // { text: 'Project', link: '/Project/started', activeMatch: '/Project/' },
       {
         text: "Project",
-        items: [{ text: "project-1", link: "/project/project-1/produce" },
-        { text: "project-2", link: "/project/project-2/produce" }
-      ],
+        items: [
+          { text: "project-1", link: "/project/project-1/produce" },
+          { text: "project-2", link: "/project/project-2/produce" },
+        ],
       },
+      { text: "diffic", link: "/diffic/started", activeMatch: "/diffic/" },
+      // 连接
       {
         text: "links",
         items: [
@@ -139,6 +141,50 @@ export default defineConfig({
             {
               text: "首页搭建",
               link: "/project/project-1/rabbit-1",
+            },
+          ],
+        },
+      ],
+      "/Js/": [
+        {
+          text: "指引",
+          items: [
+            {
+              text: "开始",
+              link: "/Js/started",
+            },
+          ],
+        },
+        {
+          text: "Js Notes",
+          items: [
+            {
+              text: "note-1",
+              link: "/Js/components/note-1",
+            },
+            {
+              text: "note-2",
+              link: "/Js/components/note-2",
+            },
+          ],
+        },
+      ],
+      "/diffic/": [
+        {
+          text: "难点",
+          items: [
+            {
+              text: "开始",
+              link: "/diffic/started",
+            },
+          ],
+        },
+        {
+          text: "diffic Notes",
+          items: [
+            {
+              text: "diffic-one",
+              link: "/diffic/components/diffic-one",
             },
           ],
         },
