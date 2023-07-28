@@ -31,6 +31,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "0g": "^0.0.9",
     "algoliasearch": "^4.17.2",
     "ansi-sequence-parser": "^1.1.0",
